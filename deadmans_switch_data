@@ -1,0 +1,19 @@
+This file cotains the deadmans switches data.
+Just enter the relevant infromation under it's categories
+
+Trigger is what causes the timer to start
+Timer is how long until the detonaion occurs (in seconds)
+Action is what the user needs to input in order for the timer to cancel
+Detonation is what happens when the timer runs out
+This is default data to latter be altered by the program
+
+"Trigger":
+startup
+"Timer":
+10
+"Action":
+1234
+"Detonation":
+restart
+
+
