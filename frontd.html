@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <title>Hello, world!</title>
+   </head>
+   <body>
+     <!-- Heading -->
+      <h1>Data Pop</h1>
+
+      <!-- Logo -->
+      <img src="https://i.stack.imgur.com/PgcSR.png" style="margin-top: 32px; margin-bottom: 32px" />
+
+      <!-- Trigger dropdown -->
+      <div class="dropdown" style="margin: 16px">
+         <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">
+         <span id="trigger-selected">Trigger</span><span class="caret"></span></a>
+         <ul class="dropdown-menu" style="padding-left: 10px">
+            <li><a class="trigger" href="#">startup</a></li>
+            <li><a class="trigger" href="#">open application</a></li>
+         </ul>
+      </div>
+
+      <!-- Timer dropdown -->
+      <div class="dropdown" style="margin: 16px">
+         <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">
+         <span id="timer-selected">Timer</span><span class="caret"></span></a>
+         <ul class="dropdown-menu" style="padding-left: 10px">
+            <li><a class="timer" href="#">15s</a></li>
+            <li><a class="timer" href="#">25s</a></li>
+            <li><a class="timer" href="#">30s</a></li>
+         </ul>
+      </div>
+
+      <!-- Action dropdown -->
+      <div class="dropdown" style="margin: 16px">
+         <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">
+         <span id="action-selected">Action</span><span class="caret"></span></a>
+         <ul class="dropdown-menu" style="padding-left: 10px">
+            <li><a class="action" href="#">shut down</a></li>
+            <li><a class="action" href="#">restart</a></li>
+            <li><a class="action" href="#">wipe</a></li>
+         </ul>
+      </div>
+
+      <!-- Button -->
+      <button type="button" class="btn btn-primary" style="margin-left: 16px">OK</button>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+      <!-- JS for handling dropdown -->
+      <script>
+         $('.trigger').click(function(){
+           $('#trigger-selected').text($(this).text());
+         });
+         $('.timer').click(function(){
+           $('#timer-selected').text($(this).text());
+         });
+         $('.action').click(function(){
+           $('#action-selected').text($(this).text());
+         });
+      </script>
+   </body>
+</html>
